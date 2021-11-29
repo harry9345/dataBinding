@@ -1,22 +1,9 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <app-game-control
-        (intervalFierd)="onIntervalFierd($event)"
-      ></app-game-control>
-      <div class="row">
-        <div class="col-xs-12">
-          <app-odd
-            *ngFor="let oddNumber of oddNumbers"
-            [number]="oddNumber"
-          ></app-odd>
-          <app-even
-            *ngFor="let evenNumber of evenNumbers"
-            [number]="evenNumber"
-          >
-          </app-even>
-        </div>
-      </div>
-    </div>
-  </div>
+<p>{{ name }}</p>
+<div class="container-fluid">
+  <app-add-user (onAddClick)="userAdded($event)"></app-add-user>
+  <hr />
+  <app-user-table [users]="users"> </app-user-table>
+  <label for="test">testing</label>
+  <input type="text" #inputName />
+  <button (click)="onClick(inputName)">click me</button>
 </div>

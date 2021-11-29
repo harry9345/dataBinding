@@ -1,0 +1,34 @@
+<form>
+  <div class="form-group col-md-5">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" #mail />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+  <div class="form-group col-md-5">
+    <label for="exampleInputPassword1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputPassword1"
+      #password
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputaddress1">address</label>
+    <input
+      #address
+      type="address"
+      class="form-control"
+      id="exampleInputaddress1"
+    />
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary"
+    (click)="saveTo(mail.value, password.value, address.value, $event)"
+  >
+    Submit
+  </button>
+</form>

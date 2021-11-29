@@ -1,0 +1,13 @@
+.bigFontSize {
+  font-size: 4rem;
+}
+
+.cancelColor {
+  color: red;
+}
+p {
+  color: rgb(65, 8, 8);
+}
+label {
+  color: green;
+}

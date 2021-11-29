@@ -1,22 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { GameControlComponent } from './game-control/game-control.component';
-import { OddComponent } from './odd/odd.component';
-import { EvenComponent } from './even/even.component';
+import { AppComponent } from "./app.component";
+import { FormsModule } from "@angular/forms";
+import { AddUserComponent } from "./add-user/add-user.component";
+import { UserTableComponent } from "./user-table/user-table.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    GameControlComponent,
-    OddComponent,
-    EvenComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, AddUserComponent, UserTableComponent],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
